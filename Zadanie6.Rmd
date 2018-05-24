@@ -1,0 +1,59 @@
+---
+title: "Jabłko"
+author: "Aleksandra Zamarja"
+date: "23 05 2018"
+output: 
+  rmarkdown::html_document:
+   theme: yeti
+   highlight: pygments
+---
+
+
+### Czym jest jabłko?
+
+>  jadalny, kulisty owoc drzew z rodzaju _jabłoń Malus_. Jabłka odmian uprawnych o mieszańcowym pochodzeniu, uznawanych za gatunek jabłoń domowa _Malus domestica_, są istotnym **komercyjnie** owocem o soczystym i chrupkim miąższu. Są spożywane na surowo, a także po obróbce kulinarnej.
+
+#### Niektóre odmiany jabłoni wraz z krótkim opisem:
+
+
+* **Cortland** – odmiana otrzymana w roku 1898 w USA poprzez skrzyżowanie odmian McIntosh i Ben Davies.
+* **Delikates** – polska odmiana uprawna jabłoni domowej
+* **Gala** – pochodząca z Nowej Zelandii odmiana uprawna jabłoni domowej
+* **Golden Delicious** – odmiana uprawna wyselekcjonowana w 1890 r. w USA
+* **Jonagold** – odmiana uprawna otrzymana w 1943 r. w USA ze skrzyżowania odmian Jonathan i Golden Delicious
+
+#### Jest jeszcze wiele odmian, ale moje ulubione to:
+
+1. Szampion
+2. Ligol
+3. Papierówka
+
+### [Przepisy na pyszne desery z jabłek](https://polki.pl/przepisy/ksiazki-kucharskie,co-zrobic-z-jablek-50-przepisow-na-desery-i-ciasta-z-jablkami,10040000,artykul.html)
+
+
+### Przysłowia o jabłkach i ich wyjaśnienie
+
+| Przysłowie | Wyjaśnienie |
+|-------------------|-----------------------|
+| _Niedaleko pada jabłko od jabłoni_ | popularny w językach europejskich zwrot opisujący cechy rodziców, dziedziczone przez dzieci. |
+| _Stłuc kogoś na kwaśne jabłko_ | zbić kogoś tak mocno, że będzie tak bezużyteczny jak kwaśne jabłko. |
+| _Leniwy czeka, żeby jabłka same wpadły mu do ust_ | przysłowie mołdawskie, podobne do polskiego wariantu z gołąbkami kapuścianymi, które leniwym same mają wpadać do ust. |
+
+`a <- "kocham jabłka" print(a)`
+
+```{r echo = FALSE}
+library(tidyverse)
+ggplot (data = mpg) +
+   geom_point(mapping = aes (x=displ, y=model)) 
+```
+
+```{r echo = FALSE }
+library(tidyverse)
+filter(mpg, displ, cty)
+```
+
+```{r echo = TRUE }
+library (tidyverse)
+group_by (mpg, model)
+```
+
